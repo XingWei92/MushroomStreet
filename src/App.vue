@@ -1,20 +1,20 @@
 <template>
   <div id="app">
-    <Header></Header>
+    <HeaderVue></HeaderVue>
     <router-view></router-view>
-    <Nav></Nav>
+    <NavVue></NavVue>
   </div>
 </template>
 
 <script>
 
-import Header from './components/Header.vue'
-import Nav from './components/Nav.vue'
+import HeaderVue from './components/Header.vue'
+import NavVue from './components/Nav.vue'
 export default {
   name: 'app',
   components:{
-    Header,
-    Nav
+    HeaderVue,
+    NavVue
   }
 }
 </script>
