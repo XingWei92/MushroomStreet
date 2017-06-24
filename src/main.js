@@ -3,6 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+//引入插件
+import axios from 'axios'
+//将插件绑定到Vue构造函数的原型中
+Vue.prototype.axios=axios;
 
 Vue.config.productionTip = false
 
