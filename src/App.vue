@@ -7,6 +7,7 @@
 </template>
 
 <script>
+
 import Header from './components/Header.vue'
 import Nav from './components/Nav.vue'
 export default {
