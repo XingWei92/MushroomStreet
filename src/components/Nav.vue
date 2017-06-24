@@ -1,5 +1,8 @@
 <template lang="html">
   <div id="nav">
+    <div class="">
+
+    </div>
     <router-link to="/home">首页</router-link>
     <router-link to="/classify">分类</router-link>
     <router-link to="/cart">购物车</router-link>
