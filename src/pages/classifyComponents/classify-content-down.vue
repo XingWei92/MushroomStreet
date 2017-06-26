@@ -28,13 +28,7 @@
 
 <script>
 export default {
-  // 请求数据写进计算属性里面
-  // computed : {
-  //    downData : function () {
-  //       this.$http.jsonp('')
-  //    }
-  //
-  // }
+     
 }
 </script>
 
