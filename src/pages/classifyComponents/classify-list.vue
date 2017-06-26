@@ -2,18 +2,18 @@
   <div class="classify-list">
    <div class="list-context">
        <ul class="uls">
-            <li v-for = 'item of allData '>
-              <router-link :to='"/classify/classifyContent/"+item.maitKey'>
+          <li v-for = 'item of allData '>
+              <router-link
+              <router-link :to="{name:'classify',params:{maitKey:item.maitKey,miniWallkey:item.miniWallkey}}">
                  {{ item.title}}
                </router-link>
-            </li>
+          </li>
       </ul>
    </div>
   </div>
 </template>
 
 <script>
-
     export default {
       created () {
         this.$http.jsonp('http://mce.mogucdn.com/jsonp/multiget/3?pids=41789%2C4604&callback').then(data =>{
@@ -67,12 +67,19 @@
 .uls li a{
   position: absolute;
   width: 80%;
-  height:.6rem;
+  height:0.6rem;
   top: 50%;
   left: 50%;
   margin-top:-0.3rem;
   margin-left: -2rem;
   line-height: .6rem;
+  text-decoration: none;
+  color: #666666;
+
+}
+.uls .router-link-active {
+    color:#FF5777;
+    background-color: #ffff;
 
 }
 </style>
