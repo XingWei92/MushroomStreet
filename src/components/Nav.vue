@@ -1,12 +1,12 @@
 <template lang="html">
   <div id="nav">
     <div class="nav_warpper">
-      <router-link to="/home" v-for="item in navData">
-        <div class="img_warpper">
-          <img :src="item.image" alt="" >
-        </div>
-        <div class="nav_content">{{item.title}}</div>
-      </router-link>
+        <router-link :to="item.navRouterName" v-for="item in navData">
+          <div class="img_warpper">
+            <img :src="item.image" alt="" >
+          </div>
+          <div class="nav_content">{{item.title}}</div>
+        </router-link>
     </div>
   </div>
 </template>
@@ -15,13 +15,17 @@
 export default {
   data(){
     return {
-      navData:[]
+      navData:[],
+      RuterName:['/home','/classify','/cart','/mine']
     }
   },
   created(){
     this.$http.jsonp('http://mce.mogucdn.com/jsonp/multiget/3?pids=51822%2C51827%2C41119%2C51833%2C51836%2C4604').then(response=>{
-      console.log(response.data.data[4604].list);
+      //console.log(response.data.data[4604].list);
       this.navData=response.data.data[4604].list;
+      this.navData.map((item,index)=>{
+        item.navRouterName=this.RuterName[index];
+      })
     })
   }
 }
