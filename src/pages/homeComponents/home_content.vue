@@ -34,7 +34,7 @@
         </div>
         <div class="show_goods">
           <div class="goods_wrap">
-            <div class="goods_item"  v-for="good in rushData">
+            <div class="goods_item"  v-for="good in msg[41119].list[0].list">
               <div class="goods_img">
                 <img :src="good.img" alt="">
               </div>
@@ -80,7 +80,6 @@
    </div>
 
 
-
   <!-- 填充 -->
   <div class="home_fill"></div>
   </div>
@@ -88,29 +87,38 @@
 
 <script>
 export default {
+  props:['msg'],
   data(){
     return {
       lazyListData:[],
-      rushData:[],
-      timeData:{},
+      // // lazyListData:[],
+      //  rushData:this.homeData[41119].list[0].list,
+      //  timeData:this.homeData[41119].list[0],
+      // salesData:this.homeData[51833].list,
+      // listData:this.homeData[51836].list
+      // lazyListData:this.homeData[51827].list;
+      // lazyListData:[],
+       rushData:[],
+       timeData:{},
       salesData:[],
       listData:[]
     }
   },
   created(){
-    this.$http.jsonp('http://mce.mogucdn.com/jsonp/multiget/3?pids=51822%2C51827%2C41119%2C51833%2C51836%2C4604').then(response=>{
-      //console.log(response.data.data[51827].list);
-      this.lazyListData=response.data.data[51827].list;
-      this.rushData=response.data.data[41119].list[0].list;
-      //console.log(response.data.data[41119].list[0]);
-      this.timeData=response.data.data[41119].list[0]
-      //console.log(this.timeData);
-      //console.log(response.data.data[51833].list);
-      this.salesData=response.data.data[51833].list;
-      //console.log(this.rushData);
-      console.log(response.data.data[51836].list);
-      this.listData=response.data.data[51836].list
-    })
+    console.log(this.msg);
+  //   this.$http.jsonp('http://mce.mogucdn.com/jsonp/multiget/3?pids=51822%2C51827%2C41119%2C51833%2C51836%2C4604').then(response=>{
+  //     //console.log(response.data.data[51827].list);
+  //     this.lazyListData=response.data.data[51827].list;
+  //     this.rushData=response.data.data[41119].list[0].list;
+  //     //console.log(response.data.data[41119].list[0]);
+  //     this.timeData=response.data.data[41119].list[0]
+  //     //console.log(this.timeData);
+  //     //console.log(response.data.data[51833].list);
+  //     this.salesData=response.data.data[51833].list;
+  //     //console.log(this.rushData);
+  //     console.log(response.data.data[51836].list);
+  //     this.listData=response.data.data[51836].list
+  //   })
   }
 }
 </script>
@@ -278,6 +286,7 @@ export default {
   white-space: nowrap;
   box-sizing: border-box;
 }
+Pseudo::serollbar element
 .goods_wrap:after{
   display: none;
   width: 0 !important;
@@ -454,8 +463,9 @@ export default {
   box-sizing: border-box;
 }
 
+/*热门市场*/
 
-
+/*填充*/
 .home_fill{
   height:1.96rem;
 }
