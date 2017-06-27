@@ -4,7 +4,7 @@
        <ul class="uls">
           <li v-for = 'item of allData '>
               <router-link
-              <router-link :to="{name:'classify',params:{maitKey:item.maitKey,miniWallkey:item.miniWallkey}}">
+              <router-link :to="{name:'classify',path:'/classify/classifyContent',params:{maitKey:item.maitKey,miniWallkey:item.miniWallkey}}">
                  {{ item.title}}
                </router-link>
           </li>

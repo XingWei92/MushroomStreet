@@ -91,13 +91,6 @@ export default {
   data(){
     return {
       lazyListData:[],
-      // // lazyListData:[],
-      //  rushData:this.homeData[41119].list[0].list,
-      //  timeData:this.homeData[41119].list[0],
-      // salesData:this.homeData[51833].list,
-      // listData:this.homeData[51836].list
-      // lazyListData:this.homeData[51827].list;
-      // lazyListData:[],
        rushData:[],
        timeData:{},
       salesData:[],
