@@ -1,6 +1,7 @@
 <template lang="html">
   <div id="nav">
     <div class="nav_warpper">
+<<<<<<< HEAD
       <router-link to="/home">
         <div class="nav_home_img img_warpper">
           <img src="../assets/images/home_nav_home1.png" alt="">
@@ -25,12 +26,35 @@
         </div>
         <div class="nav_content">我的</div>
       </router-link>
+=======
+        <router-link :to="item.navRouterName" v-for="item in navData" >
+          <div class="img_warpper">
+            <img :src="item.image" alt="" >
+          </div>
+          <div class="nav_content">{{item.title}}</div>
+        </router-link>
+>>>>>>> 7a5497f1e9e1ada84423277c19566ef25f5bfa7b
     </div>
   </div>
 </template>
 
 <script>
 export default {
+  data(){
+    return {
+      navData:[],
+      RuterName:['/home','/classify','/cart','/mine']
+    }
+  },
+  created(){
+    this.$http.jsonp('http://mce.mogucdn.com/jsonp/multiget/3?pids=51822%2C51827%2C41119%2C51833%2C51836%2C4604').then(response=>{
+      //console.log(response.data.data[4604].list);
+      this.navData=response.data.data[4604].list;
+      this.navData.map((item,index)=>{
+        item.navRouterName=this.RuterName[index];
+      })
+    })
+  }
 }
 </script>
 
@@ -49,6 +73,10 @@ export default {
   .nav_warpper{
     width:100%;
     border-top:1px solid #E5E5E5;
+<<<<<<< HEAD
+=======
+    color:#666;
+>>>>>>> 7a5497f1e9e1ada84423277c19566ef25f5bfa7b
   }
   .nav_warpper:after{
     content:"";
@@ -61,6 +89,10 @@ export default {
     float: left;
     height:100%;
     text-decoration: none;
+<<<<<<< HEAD
+=======
+    color: #666;
+>>>>>>> 7a5497f1e9e1ada84423277c19566ef25f5bfa7b
   }
   .img_warpper{
     width:.98rem;
@@ -72,14 +104,30 @@ export default {
   .nav_warpper img{
     width:90%;
     position:relative;
+<<<<<<< HEAD
     /*top:50%;*/
+=======
+    top:10%;
+>>>>>>> 7a5497f1e9e1ada84423277c19566ef25f5bfa7b
     margin-left: 5%;
     display: block;
     vertical-align: middle;
   }
   .nav_content{
+<<<<<<< HEAD
     color:#FF5777;
     text-align: center;
     font-size:.48rem;
+=======
+    margin-top: 5%;
+    text-align: center;
+    font-size:.48rem;
+  }
+  .nav_warpper>.router-link-exact-active{
+    color: #ff5777;
+  }
+  .router-link-active{
+
+>>>>>>> 7a5497f1e9e1ada84423277c19566ef25f5bfa7b
   }
 </style>
