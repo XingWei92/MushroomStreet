@@ -1,0 +1,149 @@
+{
+	"api": "mwp.member.QQMallHomeIndex",
+	"v": "1.0",
+	"ret": "SUCCESS",
+	"data": {
+		"profileInfo": {
+			"userName": "罗马表织毛衣",
+			"avatarUrl": "http://s3.mogucdn.com/new1/v1/bdefaultavatar/03.jpg_170x170.jpg",
+			"effectImgUrl": "",
+			"levelImgUrl": "",
+			"cFans": 0,
+			"cFollows": 0,
+			"backgroundImage": "",
+			"hasNewOrder": false,
+			"daren": false
+		},
+		"deliveryAddress": "http://h5.mogujie.com/mgj-address/list.html",
+		"orderInfo": {
+			"cObligations": 0,
+			"cReceipt": 0,
+			"cUnshipped": 0,
+			"cEvaluate": 0,
+			"cCustomerService": 0,
+			"redPoint": false,
+			"orderBtnJumpUrl": "http://h5.mogujie.com/order/list.html",
+			"obligationsJumpUrl": "http://h5.mogujie.com/order/list.html?orderStatus=created",
+			"receiptJumpUrl": "http://h5.mogujie.com/order/list.html?orderStatus=unshipped_and_unreceived",
+			"evaluateJumpUrl": "http://h5.mogujie.com/order/list.html?orderStatus=received_and_completed",
+			"customerServiceJumpUrl": "http://h5.mogujie.com/order/list.html?orderStatus=refund_orders",
+			"orderStatus":[
+				{
+					"tipsIcon":"https://s10.mogucdn.com/p1/160829/idid_ifqwcmddgrswkzdbmezdambqgyyde_38x33.png",
+					"tipsName":"待付款"
+				},
+				{
+					"tipsIcon":"https://s10.mogucdn.com/p1/160829/idid_ie4dcoddmnswkzdbmezdambqgiyde_38x36.png",
+					"tipsName":"待收货"
+				},
+				{
+					"tipsIcon":"https://s10.mogucdn.com/p1/160830/idid_ie4gimztheygcmdcmezdambqgiyde_38x36.png",
+					"tipsName":"待评价"
+				},
+				{
+					"tipsIcon":"https://s10.mogucdn.com/p1/160829/idid_ie3wezbvhbtgkzdbmezdambqgayde_38x35.png",
+					"tipsName":"售后"
+				}
+			]
+		},
+		"activities": [],
+		"items": [
+			{
+				"icon": "http://s6.mogucdn.com/p2/161130/159_0ihj4c5a23kabh84ka8dfhl552dla_56x56.png",
+				"title": "我的购物车",
+				"subtitle": "",
+				"jumpUrl": "http://m.mogujie.com/x6/cart/list",
+				"sequenceNumber": 0,
+				"type": 0,
+				"redPoint": false
+			}, {
+				"icon": "https://s2.mogucdn.com/mlcdn/c45406/170419_7c5a4j17k0061bg4kiagf9lc69fe8_56x56.png",
+				"title": "我的拼团",
+				"subtitle": "",
+				"jumpUrl": "http://h5.mogujie.com/order/pintuan-list.html",
+				"sequenceNumber": 0,
+				"type": 0,
+				"redPoint": false
+			}, {
+				"icon": "http://s10.mogucdn.com/p2/160822/159_00ijba9e46e13970ec7kakll8a06a_56x56.png",
+				"title": "我的优惠券",
+				"subtitle": "",
+				"jumpUrl": "http://h5.mogujie.com/coupon/coupon/index.html?type=platform",
+				"sequenceNumber": 0,
+				"type": 0,
+				"redPoint": false
+			}, {
+				"icon": "http://s16.mogucdn.com/p1/160727/upload_ifqtsndeg43gkmrqmezdambqgyyde_56x56.png",
+				"title": "我收藏的商品",
+				"subtitle": "",
+				"jumpUrl": "http://h5.mogujie.com/fav/list.html?type=goods",
+				"sequenceNumber": 0,
+				"type": 0,
+				"redPoint": false
+			}, {
+				"icon": "http://s17.mogucdn.com/p1/160727/upload_ie4wmy3gmq3wkmrqmezdambqgqyde_56x56.png",
+				"title": "我收藏的店铺",
+				"subtitle": "",
+				"jumpUrl": "http://h5.mogujie.com/fav/list.html?type=shops",
+				"sequenceNumber": 0,
+				"type": 0,
+				"redPoint": false
+			}, {
+				"icon": "https://s10.mogucdn.com/p2/170217/79944927_03dfe3a4b2fg9kd5849093d56ib14_750x130.png",
+				"title": "",
+				"subtitle": "",
+				"jumpUrl": "http://m.mogujie.com/x5/u/coupon?ptp=m1.cHaagJaa.0.9.PFBZO",
+				"sequenceNumber": 0,
+				"type": 0,
+				"redPoint": false
+			}, {
+				"icon": "http://s16.mogucdn.com/p1/160727/upload_ie4tgm3ege4wkmrqmezdambqgqyde_56x56.png",
+				"title": "消息通知",
+				"subtitle": "",
+				"jumpUrl": "http://www.mogujie.com/x/im?imver=1.2&show_header=qq#recent",
+				"sequenceNumber": 0,
+				"type": 0,
+				"redPoint": false
+			}, {
+				"icon": "http://s16.mogucdn.com/p1/160307/idid_ifrtqmdfgztggnzsg4zdambqhayde_84x84.png",
+				"title": "客服",
+				"subtitle": "",
+				"jumpUrl": "http://www.mogujie.com/x/im?imver=1.2&show_header=qq#chat/b14ejg#23",
+				"sequenceNumber": 0,
+				"type": 0,
+				"redPoint": false
+			}, {
+				"icon": "http://s17.mogucdn.com/p1/160727/upload_ifrdonbugezgkmrqmezdambqmeyde_56x56.png",
+				"title": "意见反馈",
+				"subtitle": "",
+				"jumpUrl": "http://h5.mogujie.com/feedback/feedback.html?_wv=1",
+				"sequenceNumber": 0,
+				"type": 0,
+				"redPoint": false
+			}
+		],
+		"bottomBar": [
+			{
+				"title": "首页",
+				"link": "http://m.mogujie.com?mt=12.4604.r84325.4583&acm=3.mce.1_10_19wsk.4604.0.gAbNtqnC6310o.m_231174-pos_0",
+				"selected": "https://s2.mogucdn.com/p2/170315/40592144_6ii829464gk34ai4hkdf14cdea05d_44x44.png",
+				"image": "https://s2.mogucdn.com/p2/170315/40592144_5a62k5aecifecf3iaddc0eb2l384b_44x44.png"
+			}, {
+				"title": "分类",
+				"link": "http://act.mogujie.com/cateyichi?ismobile=1&mt=12.4604.r84327.4583&acm=3.mce.1_10_19wso.4604.0.gAbNtqnC6310o.m_231176-pos_1",
+				"selected": "https://s2.mogucdn.com/p2/170315/40592144_6c127ldgd4ccebg2e8i42kedgdd69_44x44.png",
+				"image": "https://s2.mogucdn.com/p2/170315/40592144_0b8i11l822b0adfjaaifl11ig86f1_44x44.png"
+			}, {
+				"title": "购物车",
+				"link": "http://m.mogujie.com/x6/cart/list?acm=3.mce.1_10_1b1l6.4604.0.gAbNtqnC6310o.m_257609-pos_2",
+				"selected": "https://s2.mogucdn.com/p2/170315/40592144_4l6kkh68522ha1je77i1gfa4b82j2_44x44.png",
+				"image": "https://s2.mogucdn.com/p2/170315/40592144_67ja8jj102089fj6djai0l6khb0h5_44x44.png"
+			}, {
+				"title": "我的",
+				"link": "http://h5.mogujie.com/personal/personal.html?mt=12.4604.r98160.4583&acm=3.mce.1_10_19wsq.4604.0.gAbNtqnC6310o.m_231177-pos_3",
+				"selected": "https://s2.mogucdn.com/p2/170315/40592144_4aba4gee9khhe66df2723085cg75h_44x44.png",
+				"image": "https://s2.mogucdn.com/p2/170315/40592144_35ikl8db8a4lfa3f29k8k4b9k3ji2_44x44.png"
+			}
+		]
+	}
+}

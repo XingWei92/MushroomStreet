@@ -19,9 +19,38 @@
 
 <script>
 export default {
+<<<<<<< HEAD
   props:['msg']
 
 
+=======
+  props:['msg'],
+  data(){
+    return {
+      lazyListData:[],
+       rushData:[],
+       timeData:{},
+      salesData:[],
+      listData:[]
+    }
+  },
+  created(){
+    console.log(this.msg);
+  //   this.$http.jsonp('http://mce.mogucdn.com/jsonp/multiget/3?pids=51822%2C51827%2C41119%2C51833%2C51836%2C4604').then(response=>{
+  //     //console.log(response.data.data[51827].list);
+  //     this.lazyListData=response.data.data[51827].list;
+  //     this.rushData=response.data.data[41119].list[0].list;
+  //     //console.log(response.data.data[41119].list[0]);
+  //     this.timeData=response.data.data[41119].list[0]
+  //     //console.log(this.timeData);
+  //     //console.log(response.data.data[51833].list);
+  //     this.salesData=response.data.data[51833].list;
+  //     //console.log(this.rushData);
+  //     console.log(response.data.data[51836].list);
+  //     this.listData=response.data.data[51836].list
+  //   })
+  }
+>>>>>>> 5712223bbcf4890f8054f512e4d9b6d2290b3963
 }
 </script>
 

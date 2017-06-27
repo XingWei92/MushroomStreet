@@ -4,22 +4,17 @@
     <div class="content-down-box">
       <div class="content-box-fix">
         <ul class="content-box-item">
-          <li>
-            <span class="in_border">综合</span>
-          </li>
-          <li>
-            <span class="in_border">销量</span>
-          </li>
-          <li>
-            <span class="in_border">新品</span>
+          <li v-for="item in sortFilterData">
+            <router-link :to="{ name: 'classifyFilter',path:'/classify/classifyContent/:maitKey/:sortKey', params: {sortKey:item.sortKey} }">
+              <span class="in_border">{{item.title+''+item.sortKey}}</span>
+            </router-link>
           </li>
         </ul>
-
       </div>
     </div>
     <!--图片容器  -->
     <div class="">
-
+      <router-view></router-view>
     </div>
   </div>
 
@@ -27,8 +22,22 @@
 </template>
 
 <script>
+import ClassifyContentDetail from './classify-content-detail.vue'
+
 export default {
-     
+  data(){
+    return{
+      sortFilterData:[]
+    }
+  },
+  created(){
+    this.$http.jsonp('https://list.mogujie.com/search?cKey=h5-cube&fcid=10062603&page=1&_version=1&pid=&q=&_=1498459883621').then(response=>{
+      this.sortFilterData=response.data.result.sortFilter;
+    })
+  },
+  components:{
+    ClassifyContentDetail
+  }
 }
 </script>
 
