@@ -14,9 +14,8 @@ export default new Router({
     // {path:'*',redirect:'/home'},
     {path:'/home',component:HomeVue},
     {path:'/classify',component:ClassifyVue,children:[
-          //  {path:'/',redirect:'classifyContent'},
-    { path:'classifyContent/:maitKey',component:ClassifyContent}
-
+      // {path:'/',redirect:'classifyContent'},
+      {name:'classify',path:'/classify/classifyContent',component:ClassifyContent}
     ]},
     {path:'/cart',component:CartVue},
     {path:'/mine',component:MineVue}

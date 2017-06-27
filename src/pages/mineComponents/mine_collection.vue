@@ -64,7 +64,7 @@
 	margin-top:.4rem;
 }
 .mine_collection>.dif5>div{
-	height:2.6rem;
+	height:3rem;
 }
 .mine_collection>.dif5>div>.item_icon{
 	width:100%;
@@ -76,6 +76,7 @@
 	width:15rem;
 	height:2.6rem;
 	margin-top:0;
+	border-radius:0;
 }
 .mine_collection>.dif5>div>.item_main{
 	width:100%;

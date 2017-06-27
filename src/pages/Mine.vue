@@ -1,7 +1,6 @@
 <template lang="html">
 	<div>
 		<!-- mine页面头部 -->
-
 		<Mine_header :msg1="headData"></Mine_header>
 
 		<!-- mine页面主体部分 -->
@@ -9,7 +8,13 @@
 			<Mine_order :msg2="orderData"></Mine_order>
 			<!-- 收藏部分 -->
 			<Mine_collection :msg3="collectData"></Mine_collection>
+			<!-- 退出登录 -->
+			<div class="out_content">
+				<a href="">退出登录</a>
+			</div>
 		</div> 
+		
+		
 	</div>
   
 </template>
@@ -57,5 +62,23 @@ export default {
 	padding-bottom:2.6rem;
 	overflow:hidden;
 	color:#333;
+}
+/* 退出登录 */
+.mine_body>.out_content{
+	width:15rem;
+	margin-top:.6rem;
+}
+.mine_body>.out_content>a{
+	display:block;
+	width:13.2rem;
+	height:1.6rem;
+	line-height:1.6rem;
+	color:#fff;
+	background-color:#ff5777;
+	font-size:.6rem;
+	margin:0 auto;
+	border-radius:8px;
+	text-align:center;
+	text-decoration:none;
 }
 </style>

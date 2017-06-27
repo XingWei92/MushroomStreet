@@ -28,7 +28,6 @@
 	width:100%;
 	height:3.6rem;
 	display:flex;
-	background-color:pink;
 	box-sizing:border-box;
 }
 	/* 用户头像 */
