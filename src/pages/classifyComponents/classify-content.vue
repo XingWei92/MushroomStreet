@@ -3,11 +3,11 @@
      <div class="content-right">
         <div class="content-enter">
             <div class="conten-text">
-              <div class="conten-main" v-for = 'item of contentData'>
+              <div class="conten-main" v-for = 'item of resData'>
                 <div class="conten-main-box">
                   <img :src="item.image" alt="图片">
                 </div>
-                <p class="conten-p">{{ item.title+''+$route.params.maitKey}}</p>
+                <p class="conten-p">{{ item.title}}</p>
               </div>
             </div>
         </div>
@@ -24,16 +24,25 @@ export default {
     }
   },
   // 把请求数据放在计算属性，一旦数据改变，就重新计算。
-    computed:{
-       contentData: function () {
-         this.$http.jsonp("http://mce.mogujie.com/jsonp/makeup/3?pid="+this.$route.params.maitKey).then(response => {
-            this.resData = response.data.data.categoryNavigation.list;
-           },error => {
-            console.log(error);
-           })
-            return this.resData;
+  created(){
+    this.$http.jsonp("http://mce.mogujie.com/jsonp/makeup/3?pid="+this.$route.params.maitKey).then(response => {
+       this.resData = response.data.data.categoryNavigation.list;
+      },error => {
+       console.log(error);
+      })
+       return this.resData;
+  },
+  watch: {
+    '$route' (to, from) {
+      this.$http.jsonp("http://mce.mogujie.com/jsonp/makeup/3?pid="+this.$route.params.maitKey).then(response => {
+         this.resData = response.data.data.categoryNavigation.list;
+        },error => {
+         console.log(error);
+        })
+         return this.resData;
     }
   },
+
  components : {
       ClassifyBown
   }
